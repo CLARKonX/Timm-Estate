@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — TimmEstate</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- ===================== Header ===================== -->
+    <section class="contact-hero">
+        <nav class="navbar property-navbar">
+            <div class="property-navbar-container">
+                <a href="index.html" class="property-navbar-logo">
+                    <i class="fa-solid fa-house"></i>
+                    <span>TimmEstate</span>
+                </a>
+                <ul class="property-navbar-menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about us/about.html">About us</a></li>
+                    <li><a href="/listing/index.html">Properties</a></li>
+                    <li><a href="/timmestate-blog-details/blog/blog.html">Blog</a></li>
+                    <li><a href="/FAQs/faq.html">FAQs</a></li>
+                </ul>
+                <a href="/contact us/contact.html" class="property-navbar-cta">Contact Us</a>
+                <button class="property-navbar-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="contact-hero-content">
+            <h1 class="contact-hero-title">Get in touch with us.<br>Send Message</h1>
+            <p class="contact-hero-subtitle">
+                Have a question about buying, selling, or managing a property? Our team of Timm real estate professionals is ready to help you navigate your next move.
+            </p>
+        </div>
+    </section>
+    <!-- ===================== Form + contact info ===================== -->
+    <section class="contact-body">
+        <div class="contact-body-container">
+
+            <div class="contact-form-card">
+                <h2>Send Us a Message</h2>
+                <p class="contact-form-subtext">Fill out the form below and a member of our team will get back to you within 24 hours.</p>
+
+                <form class="contact-form">
+                    <div class="contact-form-row">
+                        <div class="contact-field">
+                            <label for="c-name">Full Name</label>
+                            <input type="text" id="c-name" placeholder="Jane Doe">
+                        </div>
+                        <div class="contact-field">
+                            <label for="c-email">Email Address</label>
+                            <input type="email" id="c-email" placeholder="jane@example.com">
+                        </div>
+                    </div>
+
+                    <div class="contact-form-row">
+                        <div class="contact-field">
+                            <label for="c-phone">Phone Number</label>
+                            <input type="tel" id="c-phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="contact-field">
+                            <label>Inquiry Type</label>
+                            <div class="custom-select custom-select--light">
+                                <button type="button" class="custom-select-trigger">
+                                    <span class="custom-select-value custom-select-placeholder">Select an option</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <ul class="custom-select-options">
+                                    <li class="custom-select-option" data-value="Buying a Property">Buying a Property</li>
+                                    <li class="custom-select-option" data-value="Selling a Property">Selling a Property</li>
+                                    <li class="custom-select-option" data-value="Property Management">Property Management</li>
+                                    <li class="custom-select-option" data-value="General Inquiry">General Inquiry</li>
+                                </ul>
+                                <select name="inquiry" hidden>
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="Buying a Property">Buying a Property</option>
+                                    <option value="Selling a Property">Selling a Property</option>
+                                    <option value="Property Management">Property Management</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="c-message">Your Message</label>
+                        <textarea id="c-message" rows="4" placeholder="How can we assist you?"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">
+                        Send Message <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info-card">
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon"><i class="fa-solid fa-phone"></i></span>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+234 (902) 964-2208</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>adewaleakande49@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <div>
+                        <h4>Headquarter</h4>
+                        <p>17 Akinmorin Road, Oyo State, Nigeria</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-info-icon"><i class="fa-solid fa-clock"></i></span>
+                    <div>
+                        <h4>Business Hour</h4>
+                        <p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM</p>
+                    </div>
+                </div>
+
+                <hr class="contact-info-divider">
+
+                <span class="contact-connect-label">CONNECT WITH US</span>
+                <div class="contact-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-container">
+            <h2 class="cta-heading">Let's hunt for your<br>dream residence</h2>
+            <p class="cta-text">Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
+            <a href="/listing/index.html" class="cta-btn">
+                View Our Listings <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="/index.html" class="footer-logo">
+                    <i class="fa-solid fa-house"></i>
+                    <span>TimmEstate</span>
+                </a>
+                <p class="footer-tagline">We have built our reputation as trusted real estate experts.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <span>Subscribe to Newsletter</span>
+                    <div class="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="button">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/listing/index.html">Properties</a></li>
+                    <li><a href="/timmestate-blog-details/blog/blog.html">Blogs</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="/about us/about.html">About Us</a></li>
+                    <li><a href="/contact us/contact.html">Contact Us</a></li>
+                    <li><a href="/FAQs/faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-phone"></i> +2349029642208</li>
+                    <li><i class="fa-solid fa-envelope"></i> adewaleakande49@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 17 Akinmorin Road Oyo State</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimmEstate — Property Listing</title>
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="property-hero">
+            <div class="hero-bg"></div>
+
+        <nav class="navbar property-navbar">
+            <div class="navbar-container">
+                <a href="#" class="navbar-logo">
+                    <i class="fa-solid fa-house"></i>
+                    <span>TimmEstate</span>
+                </a>
+
+                <ul class="property-navbar-menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about us/about.html">About us</a></li>
+                    <li><a href="index.html" class="active">Properties</a></li>
+                    <li><a href="/timmestate-blog-details/blog/blog.html">Blog</a></li>
+                    <li><a href="/FAQs/faq.html">FAQs</a></li>
+                </ul>
+                <a href="/contact us/contact.html" class="property-navbar-cta">Contact Us</a>
+                <button class="property-navbar-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="property-hero-content">
+            <h1 class="property-hero-title">Property Listing</h1>
+            <p class="property-hero-subtitle">
+                Discover premium homes and exclusive listings in Timm's most sought-after neighborhoods, featuring expert insights from our top agents.
+            </p>
+
+            <div class="property-filters">
+                <button class="filter-pill filter-pill--active">All</button>
+                <button class="filter-pill">Buy</button>
+                <button class="filter-pill">Sell</button>
+                <button class="filter-pill">Rent</button>
+                <button class="filter-pill">Least</button>
+            </div>
+        </div>
+
+    </section>
+
+     <section class="listings-archive">
+        <div class="listings-archive-container">
+
+            <div class="listings-archive-toolbar">
+                <h2>Listings</h2>
+
+                <div class="listings-archive-controls">
+                    <div class="sort-dropdown">
+                        <span>Sort by:</span>
+                        <div class="select-wrapper-light" id="sortWrapper">
+                            <select id="sort" class="select-native" tabindex="-1" aria-hidden="true">
+                                <option selected>Newest Listed</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Most Popular</option>
+                            </select>
+
+                            <button type="button" class="select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                                <span class="select-trigger-label">Newest Listed</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+
+                            <ul class="select-options" role="listbox">
+                                <li class="select-option select-option--active" role="option" aria-selected="true" data-value="Newest Listed">
+                                    Newest Listed <i class="fa-solid fa-check select-option-check"></i>
+                                </li>
+                                <li class="select-option" role="option" aria-selected="false" data-value="Price: Low to High">
+                                    Price: Low to High <i class="fa-solid fa-check select-option-check"></i>
+                                </li>
+                                <li class="select-option" role="option" aria-selected="false" data-value="Price: High to Low">
+                                    Price: High to Low <i class="fa-solid fa-check select-option-check"></i>
+                                </li>
+                                <li class="select-option" role="option" aria-selected="false" data-value="Most Popular">
+                                    Most Popular <i class="fa-solid fa-check select-option-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="view-toggle">
+                        <button class="view-toggle-btn view-toggle-btn--active" aria-label="List view">
+                            <i class="fa-solid fa-list"></i>
+                        </button>
+                        <button class="view-toggle-btn" aria-label="Grid view">
+                            <i class="fa-solid fa-grip"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listings-archive-grid">
+
+                <!-- Card 1 -->
+                <div class="archive-card">
+                    <a href="apex-villa.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG2.png" alt="The Apex Villa, Lekki Phase 10">
+                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦4,250,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Figma Avenue, 90210 Lagos, NG</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">The Apex Villa, Lekki Phase 10</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 4,500 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 2 -->
+                <div class="archive-card">
+                    <a href="vista-ridge.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="Frame 136.png" alt="Vista Ridge Exclusive Mansion">
+                        <span class="archive-badge archive-badge--new">New</span>
+                        <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦4,250,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> National Airport, 90077, Abuja, NG</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Vista Ridge Exclusive Mansion</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 4,500 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 3 -->
+                <div class="archive-card">
+                    <a href="skyline-blvd-1.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG4.png" alt="400 Skyline Blvd, Exclusive Duplex">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦4,250,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Owonikoko Junction, Bodija, NG</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">400 Skyline Blvd, Exclusive Du...</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 4,500 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 4 -->
+                <div class="archive-card">
+                    <a href="skyline-blvd-2.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="Image.png" alt="400 Skyline Blvd, Exclusive Duplex">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦4,250,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Figma Avenue, 90210 Lagos, NG</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">400 Skyline Blvd, Exclusive Du...</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 4,500 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                    <!-- Card 5 -->
+                <div class="archive-card">
+                    <a href="twilight-haven.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG5.png" alt="Twilight Haven Smart Home">
+                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦3,850,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i>Oniru, Victoria Island, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Twilight Haven Smart Home</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 4,500 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 6 -->
+                <div class="archive-card">
+                    <a href="richmond-gate.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG6.png" alt="Richmond Gate Terrace, Ikoyi">
+                        <span class="archive-badge archive-badge--new">New</span>
+                        <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦6,700,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i>Alexander Avenue, Ikoyi, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Richmond Gate Terrace, Ikoyi</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 5  Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> · 6,800 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 7 -->
+                <div class="archive-card">
+                    <a href="casa-emilia.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG7.png" alt="	Casa Emilia Contemporary Mansion">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">	₦9,500,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> 	Banana Island, Ikoyi, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">	Casa Emilia Contemporary Mansion</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 6 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i>  9,200 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 8 -->
+                <div class="archive-card">
+                    <a href="royal-crown.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG8.png" alt="The Royal Crown Penthouse">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦12,250,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Eko Atlantic, Victoria Island, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">The Royal Crown Penthouse</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 7,500 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                    <!-- Card 9 -->
+                <div class="archive-card">
+                    <a href="glass-house.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG9.png" alt="Glass House Chef's Residence">
+                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦4,150,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Guzape, Abuja</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Glass House Chef's Residence</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 4,800 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 10 -->
+                <div class="archive-card">
+                    <a href="marble-court.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="img10.png" alt="Marble Court Luxury Duplex">
+                        <span class="archive-badge archive-badge--new">New</span>
+                        <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦5,600,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> 	Jericho GRA, Ibadan</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Marble Court Luxury Duplex</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 5,500 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 11 -->
+                <div class="archive-card">
+                    <a href="vertex-residence.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG11.png" alt="The Vertex Smart Residence">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦7,950,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i>Lekki Phase 1, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">The Vertex Smart Residence</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 6,200 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 12 -->
+                <div class="archive-card">
+                    <a href="palm-court.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG12.png" alt="Palm Court Oasis Villa">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦11,200,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Figma Avenue, 90210 Lagos, NG</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Palm Court Oasis Villa</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 7 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 8,000 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                    <!-- Card 13 -->
+                <div class="archive-card">
+                    <a href="amberwood-terrace.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG13.png" alt="Amberwood Terrace Duplex">
+                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦4,850,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Omole Phase 2, Ikeja, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Amberwood Terrace Duplex</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 4,600 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 14 -->
+                <div class="archive-card">
+                    <a href="horizon-residences.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG14.png" alt="The Horizon Residences">
+                        <span class="archive-badge archive-badge--new">New</span>
+                        <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦2,950,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Wuye, Abuja</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">The Horizon Residences</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 2,800 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 15 -->
+                <div class="archive-card">
+                    <a href="verdant-deck.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG15.png" alt="Verdant Deck Family Home">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦5,300,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Old Bodija, Ibadan</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Verdant Deck Family Home</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 5,100 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+
+                <!-- Card 16 -->
+                <div class="archive-card">
+                    <a href="azure-bay.html" class="archive-card-link">
+                    <div class="archive-card-image">
+                        <img src="IMG16.png" alt="Azure Bay Pool Villa">
+                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
+                        <div class="archive-card-overlay">
+                            <h3 class="archive-card-price">₦14,500,000</h3>
+                            <p class="archive-card-location"><i class="fa-solid fa-location-dot"></i> Ilasan, Lekki, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4 class="archive-card-title">Azure Bay Pool Villa</h4>
+                        <p class="archive-card-desc">Exquisite full-floor penthouse offering 360-degree views...</p>
+                        <div class="archive-card-features">
+                            <span><i class="fa-solid fa-bed"></i> 6 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 8 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 9,800 SqFt</span>
+                        </div>
+                    </div>
+                    </a>
+            </div>
+            </div>
+
+            <div class="listings-pagination">
+                <button class="pagination-arrow" aria-label="Previous page"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="pagination-btn pagination-btn--active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <span class="pagination-ellipsis">...</span>
+                <button class="pagination-btn">6</button>
+                <button class="pagination-arrow" aria-label="Next page"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+
+     <section class="cta">
+        <div class="cta-container">
+            <h2 class="cta-heading">Let's hunt for your<br>dream residence</h2>
+            <p class="cta-text">Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
+            <a href="#" class="cta-btn">
+                Get in touch with us <i class="fa-regular fa-circle-question"></i>
+            </a>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <i class="fa-solid fa-house"></i>
+                    <span>TimmEstate</span>
+                </a>
+                <p class="footer-tagline">We have built our reputation as trusted real estate experts.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <span>Subscribe to Newsletter</span>
+                    <div class="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="button">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/listing/index.html">Properties</a></li>
+                    <li><a href="/timmestate-blog-details/blog/blog.html">Blogs</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="/about us/about.html">About Us</a></li>
+                    <li><a href="/contact us/contact.html">Contact Us</a></li>
+                    <li><a href="/FAQs/faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-phone"></i> +2349029642208</li>
+                    <li><i class="fa-solid fa-envelope"></i>adewaleakande49@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i>17 Akinmorin Road Oyo State</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
