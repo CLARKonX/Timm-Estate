@@ -8,6 +8,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: #f8fafc;
+    overflow-x: hidden;
 }
 
 /* reuse the same frosted navbar look as the rest of the site */
@@ -267,6 +268,8 @@ body {
 
 .pd-content {
     padding: 56px 24px 100px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .pd-content-container {
@@ -278,6 +281,10 @@ body {
     align-items: start;
 }
 
+.pd-main {
+    min-width: 0;
+}
+
 .pd-gallery {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
@@ -285,8 +292,13 @@ body {
     margin-bottom: 32px;
 }
 
+.pd-gallery-main {
+    min-width: 0;
+}
+
 .pd-gallery-main img {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     min-height: 260px;
     object-fit: cover;
@@ -298,15 +310,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    min-width: 0;
 }
 
 .pd-gallery-side img {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
     display: block;
     flex: 1;
+    min-width: 0;
     min-height: 120px;
 }
 
@@ -379,6 +394,10 @@ body {
 /* ==================================================================
    Sidebar: agent card + inquiry form
    ================================================================== */
+
+.pd-sidebar {
+    min-width: 0;
+}
 
 .pd-agent-card {
     background-color: #ffffff;
@@ -465,6 +484,7 @@ body {
     font-size: 13.5px;
     color: #0f172a;
     width: 100%;
+    min-width: 0;
     background: transparent;
 }
 
@@ -481,6 +501,8 @@ body {
     color: #0f172a;
     resize: none;
     outline: none;
+    width: 100%;
+    min-width: 0;
 }
 
 .pd-inquiry-form textarea::placeholder {
@@ -553,6 +575,12 @@ body {
 
     .pd-heart {
         right: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .pd-gallery-side {
+        flex-direction: column;
     }
 }
 
