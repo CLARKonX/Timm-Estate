@@ -48,11 +48,11 @@
             </p>
 
             <div class="property-filters">
-                <button class="filter-pill filter-pill--active">All</button>
-                <button class="filter-pill">Buy</button>
-                <button class="filter-pill">Sell</button>
-                <button class="filter-pill">Rent</button>
-                <button class="filter-pill">Least</button>
+                <button class="filter-pill filter-pill--active" data-filter="all">All</button>
+                <button class="filter-pill" data-filter="buy">Buy</button>
+                <button class="filter-pill" data-filter="sell">Sell</button>
+                <button class="filter-pill" data-filter="rent">Rent</button>
+                <button class="filter-pill" data-filter="least">Least</button>
             </div>
         </div>
 
@@ -110,12 +110,12 @@
 
             <div class="listings-archive-grid">
 
-                <!-- Card 1 -->
-                <div class="archive-card">
+                <!-- Card 1 — Buy -->
+                <div class="archive-card" data-category="buy">
                     <a href="apex-villa.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG2.png" alt="The Apex Villa, Lekki Phase 10">
-                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <span class="archive-badge archive-badge--buy">Buy</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦4,250,000</h3>
@@ -134,12 +134,12 @@
                     </a>
             </div>
 
-                <!-- Card 2 -->
-                <div class="archive-card">
+                <!-- Card 2 — Buy -->
+                <div class="archive-card" data-category="buy">
                     <a href="vista-ridge.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="Frame 136.png" alt="Vista Ridge Exclusive Mansion">
-                        <span class="archive-badge archive-badge--new">New</span>
+                        <span class="archive-badge archive-badge--buy">Buy</span>
                         <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦4,250,000</h3>
@@ -158,12 +158,12 @@
                     </a>
             </div>
 
-                <!-- Card 3 -->
-                <div class="archive-card">
+                <!-- Card 3 — Buy -->
+                <div class="archive-card" data-category="buy">
                     <a href="skyline-blvd-1.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG4.png" alt="400 Skyline Blvd, Exclusive Duplex">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--buy">Buy</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦4,250,000</h3>
@@ -182,12 +182,12 @@
                     </a>
             </div>
 
-                <!-- Card 4 -->
-                <div class="archive-card">
+                <!-- Card 4 — Buy -->
+                <div class="archive-card" data-category="buy">
                     <a href="skyline-blvd-2.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="Image.png" alt="400 Skyline Blvd, Exclusive Duplex">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--buy">Buy</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦4,250,000</h3>
@@ -206,12 +206,12 @@
                     </a>
             </div>
 
-                    <!-- Card 5 -->
-                <div class="archive-card">
+                    <!-- Card 5 — Buy -->
+                <div class="archive-card" data-category="buy">
                     <a href="twilight-haven.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG5.png" alt="Twilight Haven Smart Home">
-                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <span class="archive-badge archive-badge--buy">Buy</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦3,850,000</h3>
@@ -230,12 +230,12 @@
                     </a>
             </div>
 
-                <!-- Card 6 -->
-                <div class="archive-card">
+                <!-- Card 6 — Sell -->
+                <div class="archive-card" data-category="sell">
                     <a href="richmond-gate.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG6.png" alt="Richmond Gate Terrace, Ikoyi">
-                        <span class="archive-badge archive-badge--new">New</span>
+                        <span class="archive-badge archive-badge--sell">Sell</span>
                         <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦6,700,000</h3>
@@ -254,12 +254,12 @@
                     </a>
             </div>
 
-                <!-- Card 7 -->
-                <div class="archive-card">
+                <!-- Card 7 — Sell -->
+                <div class="archive-card" data-category="sell">
                     <a href="casa-emilia.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG7.png" alt="	Casa Emilia Contemporary Mansion">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--sell">Sell</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">	₦9,500,000</h3>
@@ -278,12 +278,12 @@
                     </a>
             </div>
 
-                <!-- Card 8 -->
-                <div class="archive-card">
+                <!-- Card 8 — Sell -->
+                <div class="archive-card" data-category="sell">
                     <a href="royal-crown.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG8.png" alt="The Royal Crown Penthouse">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--sell">Sell</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦12,250,000</h3>
@@ -302,12 +302,12 @@
                     </a>
             </div>
 
-                    <!-- Card 9 -->
-                <div class="archive-card">
+                    <!-- Card 9 — Sell -->
+                <div class="archive-card" data-category="sell">
                     <a href="glass-house.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG9.png" alt="Glass House Chef's Residence">
-                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <span class="archive-badge archive-badge--sell">Sell</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦4,150,000</h3>
@@ -326,12 +326,12 @@
                     </a>
             </div>
 
-                <!-- Card 10 -->
-                <div class="archive-card">
+                <!-- Card 10 — Sell -->
+                <div class="archive-card" data-category="sell">
                     <a href="marble-court.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="img10.png" alt="Marble Court Luxury Duplex">
-                        <span class="archive-badge archive-badge--new">New</span>
+                        <span class="archive-badge archive-badge--sell">Sell</span>
                         <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦5,600,000</h3>
@@ -350,12 +350,12 @@
                     </a>
             </div>
 
-                <!-- Card 11 -->
-                <div class="archive-card">
+                <!-- Card 11 — Rent -->
+                <div class="archive-card" data-category="rent">
                     <a href="vertex-residence.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG11.png" alt="The Vertex Smart Residence">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--rent">Rent</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦7,950,000</h3>
@@ -374,12 +374,12 @@
                     </a>
             </div>
 
-                <!-- Card 12 -->
-                <div class="archive-card">
+                <!-- Card 12 — Rent -->
+                <div class="archive-card" data-category="rent">
                     <a href="palm-court.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG12.png" alt="Palm Court Oasis Villa">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--rent">Rent</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦11,200,000</h3>
@@ -398,12 +398,12 @@
                     </a>
             </div>
 
-                    <!-- Card 13 -->
-                <div class="archive-card">
+                    <!-- Card 13 — Rent -->
+                <div class="archive-card" data-category="rent">
                     <a href="amberwood-terrace.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG13.png" alt="Amberwood Terrace Duplex">
-                        <span class="archive-badge archive-badge--sale">For Sale</span>
+                        <span class="archive-badge archive-badge--rent">Rent</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦4,850,000</h3>
@@ -422,12 +422,12 @@
                     </a>
             </div>
 
-                <!-- Card 14 -->
-                <div class="archive-card">
+                <!-- Card 14 — Least -->
+                <div class="archive-card" data-category="least">
                     <a href="horizon-residences.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG14.png" alt="The Horizon Residences">
-                        <span class="archive-badge archive-badge--new">New</span>
+                        <span class="archive-badge archive-badge--least">Least</span>
                         <button class="archive-card-heart archive-card-heart--active"><i class="fa-solid fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦2,950,000</h3>
@@ -446,12 +446,12 @@
                     </a>
             </div>
 
-                <!-- Card 15 -->
-                <div class="archive-card">
+                <!-- Card 15 — Least -->
+                <div class="archive-card" data-category="least">
                     <a href="verdant-deck.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG15.png" alt="Verdant Deck Family Home">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--least">Least</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦5,300,000</h3>
@@ -470,12 +470,12 @@
                     </a>
             </div>
 
-                <!-- Card 16 -->
-                <div class="archive-card">
+                <!-- Card 16 — Least -->
+                <div class="archive-card" data-category="least">
                     <a href="azure-bay.html" class="archive-card-link">
                     <div class="archive-card-image">
                         <img src="IMG16.png" alt="Azure Bay Pool Villa">
-                        <span class="archive-badge archive-badge--hot">HOT 🔥</span>
+                        <span class="archive-badge archive-badge--least">Least</span>
                         <button class="archive-card-heart"><i class="fa-regular fa-heart"></i></button>
                         <div class="archive-card-overlay">
                             <h3 class="archive-card-price">₦14,500,000</h3>
@@ -494,6 +494,8 @@
                     </a>
             </div>
             </div>
+
+            <p class="listings-empty-state" style="display:none;">No properties currently match this filter.</p>
 
             <div class="listings-pagination">
                 <button class="pagination-arrow" aria-label="Previous page"><i class="fa-solid fa-chevron-left"></i></button>

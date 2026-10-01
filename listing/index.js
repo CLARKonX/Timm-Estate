@@ -2,7 +2,8 @@
    TimmEstate — shared script (works on home + listing pages)
    1. Mobile navbar toggle (both pages)
    2. Custom "Sort by" dropdown (listing page only)
-   3. Pagination + sorting (listing page only)
+   3. Buy/Sell/Rent/Least filter pills (listing page only)
+   4. Pagination + sorting (listing page only)
    ========================================================= */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -110,13 +111,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* ============ PART 3: Pagination + sorting (listing page) ============ */
+    /* ============ PART 3: Filter pills + pagination + sorting (listing page) ============
+       These three share one render() so they never fight over which cards
+       are visible — filtering narrows the set, sorting orders it, pagination
+       slices it into pages of 8. ============ */
 
     var CARDS_PER_PAGE = 8;
 
-    var grid       = document.querySelector('.listings-archive-grid');
-    var sortSelect = document.getElementById('sort');
-    var pagination = document.querySelector('.listings-pagination');
+    var grid        = document.querySelector('.listings-archive-grid');
+    var sortSelect  = document.getElementById('sort');
+    var pagination  = document.querySelector('.listings-pagination');
+    var filterPills = document.querySelectorAll('.filter-pill');
+    var emptyState  = document.querySelector('.listings-empty-state');
 
     if (!grid || !sortSelect || !pagination) return; /* not on listing page — stop here */
 
@@ -130,7 +136,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return parseInt(text.replace(/[^0-9]/g, ''), 10) || 0;
     }
 
-    var currentPage = 1;
+    var currentPage   = 1;
+    var activeFilter  = 'all';
 
     function sortCards(cards, mode) {
         var sorted = cards.slice();
@@ -202,9 +209,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function render() {
-        var sorted = sortCards(allCards, sortSelect.value);
+        /* 1. filter by active category */
+        var filtered = allCards.filter(function (card) {
+            return activeFilter === 'all' || card.dataset.category === activeFilter;
+        });
+
+        /* always hide cards that don't match the filter, regardless of page */
+        allCards.forEach(function (card) {
+            var matches = activeFilter === 'all' || card.dataset.category === activeFilter;
+            if (!matches) card.style.display = 'none';
+        });
+
+        if (emptyState) {
+            emptyState.style.display = filtered.length === 0 ? 'block' : 'none';
+        }
+
+        /* 2. sort the filtered set */
+        var sorted = sortCards(filtered, sortSelect.value);
         sorted.forEach(function (card) { grid.appendChild(card); });
 
+        /* 3. paginate the filtered + sorted set */
         var totalPages = Math.max(1, Math.ceil(sorted.length / CARDS_PER_PAGE));
         currentPage = Math.min(currentPage, totalPages);
 
@@ -215,6 +239,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         renderPagination(totalPages);
     }
+
+    filterPills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+            filterPills.forEach(function (p) { p.classList.remove('filter-pill--active'); });
+            this.classList.add('filter-pill--active');
+            activeFilter = this.dataset.filter;
+            currentPage = 1;
+            render();
+        });
+    });
 
     sortSelect.addEventListener('change', function () {
         currentPage = 1;
@@ -231,5 +265,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     render();
 });
-
-
