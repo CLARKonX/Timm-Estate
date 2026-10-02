@@ -1,10 +1,3 @@
-/* ==================================================================
-   About page — hero, intro/trust section, advantage grid, CTA
-   Relies on style.css for shared navbar (.navbar, .navbar-container, etc.)
-   ================================================================== */
-
-/* ---------- Hero ---------- */
-
 .about-hero {
     position: relative;
     width: 100%;
@@ -63,8 +56,6 @@
         font-size: 1.625rem;
     }
 }
-
-/* ---------- Trust / intro ---------- */
 
 .about-intro {
     background-color: #ffffff;
@@ -243,8 +234,6 @@
     }
 }
 
-/* ---------- Our Advantage ---------- */
-
 .advantage {
     background-color: #f8fafc;
     padding: 100px 24px;
@@ -321,8 +310,6 @@
         grid-template-columns: 1fr;
     }
 }
-
-/* ---------- CTA ---------- */
 
 .about-cta {
     position: relative;

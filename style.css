@@ -116,7 +116,6 @@ body {
     font-size: 1.25rem;
     cursor: pointer;
 }
-/* ---------- Custom Select (dark, for hero search widget) ---------- */
 
 .navbar-container {
     position: relative;
@@ -207,7 +206,6 @@ body {
     font-weight: 600;
 }
 
-/* ---------- Mobile nav open state (fixes the toggle button) ---------- */
 
 @media (max-width: 768px) {
     .navbar.nav-open .navbar-menu {

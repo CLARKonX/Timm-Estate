@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    /* ---------- Mobile nav toggle ---------- */
     document.querySelectorAll('.navbar').forEach(function (nav) {
         var toggle = nav.querySelector('.navbar-toggle, .property-navbar-toggle');
         if (!toggle) return;
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    /* ---------- Custom select dropdowns ---------- */
     document.querySelectorAll('.custom-select').forEach(function (select) {
         var trigger = select.querySelector('.custom-select-trigger');
         var valueEl = select.querySelector('.custom-select-value');
