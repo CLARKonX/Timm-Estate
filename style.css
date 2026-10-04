@@ -876,12 +876,12 @@ body {
 }
 
 .badge-sell {
-    background-color: red;
+    background-color: #ff0000;
     color: #ffffff;
 }
 
 .badge-buy {
-    background-color: green;
+    background-color: #008000;
     color: #ffffff;
 }
 
