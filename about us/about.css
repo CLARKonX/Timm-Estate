@@ -13,7 +13,7 @@
 .about-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.25) 35%, rgba(15, 23, 42, 0.65) 100%);
+    background: linear-gradient(180deg, rgba(11, 18, 32, 0.55) 0%, rgba(11, 18, 32, 0.25) 35%, rgba(11, 18, 32, 0.65) 100%);
     z-index: 1;
 }
 
@@ -90,14 +90,14 @@
     background-color: #ffffff;
     border-radius: 14px;
     padding: 16px 20px;
-    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+    box-shadow: 0 12px 32px rgba(11, 18, 32, 0.12);
     text-align: center;
 }
 
 .about-rating-score {
     font-size: 26px;
     font-weight: 700;
-    color: #0f172a;
+    color: #0B1220;
 }
 
 .about-rating-stars {
@@ -108,13 +108,13 @@
 
 .about-rating-label {
     font-size: 11px;
-    color: #94a3b8;
+    color: #9AA7BC;
 }
 
 .about-rating-reviews {
     font-size: 12px;
     font-weight: 600;
-    color: #14b8a6;
+    color: #F0674F;
 }
 
 .about-stats-row {
@@ -131,19 +131,19 @@
     background-color: #ffffff;
     border-radius: 14px;
     padding: 16px 20px;
-    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.1);
+    box-shadow: 0 12px 32px rgba(11, 18, 32, 0.1);
 }
 
 .about-stat-number {
     display: block;
     font-size: 22px;
     font-weight: 700;
-    color: #0f172a;
+    color: #0B1220;
 }
 
 .about-stat-label {
     font-size: 12px;
-    color: #64748b;
+    color: #707A8C;
 }
 
 .about-intro-text {
@@ -153,8 +153,8 @@
 
 .about-badge {
     display: inline-block;
-    background-color: #f1f5f9;
-    color: #334155;
+    background-color: #F4F0E9;
+    color: #4A5261;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -166,14 +166,14 @@
 .about-intro-heading {
     font-size: 28px;
     font-weight: 700;
-    color: #0f172a;
+    color: #0B1220;
     line-height: 1.3;
     margin-bottom: 20px;
 }
 
 .about-intro-body {
     font-size: 15px;
-    color: #64748b;
+    color: #707A8C;
     line-height: 1.7;
     margin-bottom: 16px;
 }
@@ -182,7 +182,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: #14b8a6;
+    background-color: #F0674F;
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
@@ -194,7 +194,7 @@
 }
 
 .about-intro-btn:hover {
-    background-color: #0d9488;
+    background-color: #D9533B;
 }
 
 @media (max-width: 900px) {
@@ -235,7 +235,7 @@
 }
 
 .advantage {
-    background-color: #f8fafc;
+    background-color: #FAF7F1;
     padding: 100px 24px;
     text-align: center;
 }
@@ -252,7 +252,7 @@
 .advantage-heading {
     font-size: 30px;
     font-weight: 700;
-    color: #0f172a;
+    color: #0B1220;
     margin-bottom: 48px;
 }
 
@@ -265,7 +265,7 @@
 
 .advantage-card {
     background-color: #ffffff;
-    border: 1px solid #f1f5f9;
+    border: 1px solid #F4F0E9;
     border-radius: 16px;
     padding: 32px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
@@ -273,7 +273,7 @@
 
 .advantage-card i {
     font-size: 24px;
-    color: #14b8a6;
+    color: #F0674F;
     margin-bottom: 20px;
     display: block;
 }
@@ -281,13 +281,13 @@
 .advantage-card h4 {
     font-size: 17px;
     font-weight: 700;
-    color: #0f172a;
+    color: #0B1220;
     margin-bottom: 10px;
 }
 
 .advantage-card p {
     font-size: 13.5px;
-    color: #64748b;
+    color: #707A8C;
     line-height: 1.65;
 }
 
@@ -323,7 +323,7 @@
 .about-cta-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(15, 23, 42, 0.55);
+    background: rgba(11, 18, 32, 0.55);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
@@ -351,7 +351,7 @@
 
 .about-cta-btn {
     display: inline-block;
-    background-color: #14b8a6;
+    background-color: #F0674F;
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
@@ -362,7 +362,7 @@
 }
 
 .about-cta-btn:hover {
-    background-color: #0d9488;
+    background-color: #D9533B;
 }
 
 @media (max-width: 480px) {
@@ -373,4 +373,90 @@
     .about-cta-content h2 {
         font-size: 24px;
     }
+}
+
+
+/* Advantage cards lift like the home listing cards */
+.advantage-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(11, 18, 32, 0.08);
+    border-color: #E8E1D6;
+}
+
+/* Card icons warm up on hover */
+.advantage-card i {
+    transition: transform 0.3s ease, color 0.25s ease;
+}
+
+.advantage-card:hover i {
+    transform: scale(1.15);
+    color: #D9533B;
+}
+
+/* Intro button: same lift + shine sweep as the navbar CTA */
+.about-intro-btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(240, 103, 79, 0.25);
+}
+
+.about-intro-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(240, 103, 79, 0.45);
+}
+
+.about-intro-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+    transform: skewX(-20deg);
+}
+
+.about-intro-btn:hover::before {
+    animation: about-btn-shine 0.7s ease;
+}
+
+@keyframes about-btn-shine {
+    from { left: -80%; }
+    to   { left: 130%; }
+}
+
+/* CTA button on the parallax banner: same treatment */
+.about-cta-btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(240, 103, 79, 0.3);
+}
+
+.about-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(240, 103, 79, 0.5);
+}
+
+.about-cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-20deg);
+}
+
+.about-cta-btn:hover::before {
+    animation: about-cta-shine 0.7s ease;
+}
+
+@keyframes about-cta-shine {
+    from { left: -80%; }
+    to   { left: 130%; }
 }
